@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Submission">
+
+    <include
+        android:id="@+id/submission_toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/project_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/project_submission"
+        android:textColor="@color/colorProject"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submission_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/project_textView">
+
+        <EditText
+            android:id="@+id/first_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_field"
+            android:ems="9"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/last_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/first_name_textView"
+            android:background="@drawable/background_field"
+            android:ems="9"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/email_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/background_field"
+            android:hint="Email"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/first_name_textView"
+            android:padding="5dp"/>
+        <EditText
+            android:id="@+id/git_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/background_field"
+            android:hint="Project on GITHUB (Link)"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textWebEditText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/email_textView"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/submission_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:background="@drawable/background_button_submit"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/git_textView"
+            android:layout_centerInParent="true"
+            android:elevation="3dp"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

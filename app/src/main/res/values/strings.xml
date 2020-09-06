@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Leaderboard</string>
+    <string name="launcher_logo">launcher logo</string>
+    <string name="project_submission">Project Submission</string>
+    <string name="title_activity_top_learners">TopLearners</string>
+    <string name="tab_text_1">LEARNING LEADERS</string>
+    <string name="tab_text_2">SKILL IQ LEADERS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="badge_description">Learner badge</string>
+    <string name="submission_not_successful">Submission not Successful</string>
+    <string name="submission_successful">Submission Successful</string>
+</resources>
