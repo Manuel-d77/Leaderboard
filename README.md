@@ -1,3 +1,3 @@
 # Leaderboard
-Android Practice Project
+Android Practice Project,
 Make server requests using Retrofit
